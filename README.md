@@ -50,14 +50,19 @@ Building Disk Images
 Building disk image may take anywhere from 30 minutes to several hours depending on your host machine and download speed.
  
 $ ./build_all.sh
+
 Upon successful build, all the available build fragments (incl. disk images) will be available in $BUILDDIR/aloelite_images/ (<path>/ Microsemi-SoC-IP_Yocto/build/aloelite_images)
+
 Generated disk images for writing to uSD card are
 u-boot.bin, bbl.bin and aloelite-image-aloelite.tar.gz
+
 Preparing an SD Card and Programming an Image for the First Time
 refer to QSG section.
+
 To automatically partition and format your SD card, from the $BUILDDIR/aloelite_images/  (<path>/ Microsemi-SoC-IP_Yocto/build/aloelite_images)
      $ cd $BUILDDIR/aloelite_images:
      $ sudo make DISK=/dev/path-to-sdcard-device format-boot-loader
+
 At this point, LC-MPFS-DEV-KIT should be bootable using  new SD card. You can remove it from your PC and insert it into the SD card slot on the LC-MPFS-DEV-KIT.
 
 
