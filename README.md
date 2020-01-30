@@ -1,7 +1,11 @@
 Building images through Yocto
+
 Yocto is an open source build system for creating custom embedded Linux distributions. The term Poky refers to Yocto’s example Linux distribution. It is a starting point for your own use of Yocto to create a custom distribution for your hardware target.
 Bitbake is the name of a build tool written in Python. The tool parses recipe files and performs the various build tasks. It caches both downloads and build results in order to speed up repeated builds. While the first full build of a system image can take several hours, the following build times easily collapse down to minutes.
- For more information on Yocto, Bitbake refer to the following:
+
+For more information on Yocto, Bitbake refer to the following:
+BitBake User Manual 2.7.1 by Yocto
+
 •	Yocto Project Reference Manual 2.7.1 by Yocto
 •	Yocto Project Complete Documentation (MegaManual) Set 2.7.1 by Yocto
 •	BitBake User Manual 2.7.1 by Yocto
